@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Restaurent</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let resto of collection">
+                    <td>{{resto.id}}</td>
+                    <td>{{resto.name}}</td>
+                    <td>{{resto.address}}</td>
+                    <td>{{resto.email}}</td>
+                </tr>
+    </tbody>
+  </table>
