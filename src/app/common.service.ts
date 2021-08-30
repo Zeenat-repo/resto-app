@@ -11,4 +11,7 @@ export class CommonService {
   getRestoList(){
     return this._http.get(this.URL);
   }
+  addResto(data:any){
+    return this._http.post(this.URL, data);
+  }
 }

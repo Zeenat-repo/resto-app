@@ -1,18 +1,20 @@
 <table class="table table-striped">
-    <thead>
-      <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Name</th>
-        <th scope="col">Restaurent</th>
-        <th scope="col">Email</th>
-      </tr>
-    </thead>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
     <tbody>
-       <tr *ngFor="let resto of collection">
-                    <td>{{resto.id}}</td>
-                    <td>{{resto.name}}</td>
-                    <td>{{resto.address}}</td>
-                    <td>{{resto.email}}</td>
-                </tr>
+       <tr *ngFor="let resto of collection">
+          <td>{{resto.id}}</td>
+           <td>{{resto.name}}</td>
+            <td>{{resto.address}}</td>
+            <td>{{resto.email}}</td>
+        <td><i class="fa fa-edit" style="font-size:30px;"></i>&nbsp;&nbsp; <i class="fa fa-trash" style="font-size:30px;color:red"></i></td>
+         </tr>
     </tbody>
   </table>
