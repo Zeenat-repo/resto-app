@@ -11,7 +11,16 @@ export class CommonService {
   getRestoList(){
     return this._http.get(this.URL);
   }
-  addResto(data:any){
+  addResto(data: any){
     return this._http.post(this.URL, data);
   }
+  getCurrentData(id: any){
+    return this._http.get(`${this.URL}/${id}`)
+    }
+    updateResto(id:any,data:any){
+      return this._http.get(`${this.URL}/${id}`,data)
+    }
+    deleteResto(id: any){
+      return this._http.delete(`${this.URL}/${id}`)
+    }
 }
